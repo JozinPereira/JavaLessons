@@ -6,6 +6,7 @@ public class MainString {
         String str;
         str = " дОБРО ";
         str2(str);
+        System.out.println(ok(str));
 
     }
 
@@ -20,6 +21,22 @@ public class MainString {
         String strB = str2.substring(1);
 
         return strA.concat(strB);
+    }
+
+    private static String ok(String str) {
+
+        return str
+                .trim()
+                .toLowerCase()
+                .substring(0, 1)
+                .toUpperCase()
+                .concat(str
+                        .trim()
+                        .toLowerCase()
+                        .substring(1)
+                );
+
+
     }
 
 
