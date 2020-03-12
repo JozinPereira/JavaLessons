@@ -25,13 +25,12 @@ public class MainString {
 
     private static String ok(String str) {
 
-        return str
-                .trim()
-                .toLowerCase()
+        String strA = str.trim();
+
+        return strA
                 .substring(0, 1)
                 .toUpperCase()
-                .concat(str
-                        .trim()
+                .concat(strA
                         .toLowerCase()
                         .substring(1)
                 );
